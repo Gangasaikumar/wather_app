@@ -1,0 +1,133 @@
+@media (min-width: 1200px) {}
+
+@media (min-width: 768px) {}
+
+@font-face {
+  font-family: 'Material Symbols Rounded';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../../assets/font/material-symbol-rounded.woff2) format('woff2');
+}
+
+.m-icon {
+  font-family: 'Material Symbols Rounded';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2.4rem;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  font-feature-settings: 'liga';
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+  height: 1em;
+  width: 1em;
+  overflow: hidden;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 360px minmax(0, 1fr);
+  gap: 40px;
+}
+
+.gird-info {
+  display: grid;
+  grid-template-areas: "airQuality airQuality sunSet_SunRice sunSet_SunRice"
+    "Humidity Pressure Visibility Feels_Like";
+  gap: 1.5rem;
+}
+
+.grid_air,
+.grid_sun_rice,
+.gird_humidity,
+.grid_pressure,
+.grid_visibility,
+.grid_feels {
+  background-color: #364457;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+}
+
+.grid_air {
+  grid-area: airQuality;
+}
+
+.grid_sun_rice {
+  grid-area: sunSet_SunRice;
+}
+
+.gird_humidity {
+  grid-area: Humidity;
+}
+
+.grid_pressure {
+  grid-area: Pressure;
+}
+
+.grid_visibility {
+  grid-area: Visibility;
+}
+
+.grid_feels {
+  grid-area: Feels_Like;
+}
+
+.badge {
+  font-weight: 500;
+  padding: 0px 14px;
+  border-radius: 500px;
+  cursor: help;
+}
+
+.badge.aqi-1 {
+  background-color: #89E589;
+  color: #1F331F;
+}
+
+.badge.aqi-2 {
+  background-color: #E5DD89;
+  color: #33311F;
+}
+
+.badge.aqi-3 {
+  background-color: #E5C089;
+  color: v#332B1F;
+}
+
+.badge.aqi-4 {
+  background-color: v#E58989;
+  color: #331F1F;
+}
+
+.badge.aqi-5 {
+  background-color: #E589B7;
+  color: #331F29;
+}
+
+.label-1,
+.label-2 {
+  font-size: 1rem;
+}
+
+.grid_sun_rice div p:first-child,.grid_air li p:first-child{
+  color: #c8c8c7;
+  font-weight: 500;
+}
+
+
+
+
+.grid_feels div p:last-child,
+.grid_visibility div p:last-child,
+.grid_pressure div p:last-child,
+.gird_humidity div p:last-child,
+.grid_sun_rice div p:last-child,
+.grid_air li p:last-child{
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
