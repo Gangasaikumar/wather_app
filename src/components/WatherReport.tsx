@@ -23,7 +23,7 @@ return (
       {watherReport ? <Layout>
         <Content className="mt-6 mr-4 mb-0 p-6 rounded-lg shadow-slate-300">
           <h1 className="text-2xl my-4">
-            Wather In "
+          Weather In "
             <span className="text-yellow-400">
               {watherReport?.locationName}
             </span>
